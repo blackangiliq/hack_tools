@@ -1,30 +1,25 @@
-# 🛠️ Hack Tools Collection
+# 🔍 Website Technology Analyzer
 
-Advanced cybersecurity and penetration testing tools powered by AI.
+Detect technologies, frameworks, and tools used by any website using Wappalyzer.
 
-## 📁 Tools
+## 📁 Structure
 
-### 1. Website Analyzer
-Detect technologies and frameworks used by any website.
+```
+hack_tools/
+├── README.md                          # Main documentation
+└── website_analyzer/                  # Website analysis tool
+    ├── README.md                      # Detailed guide
+    ├── requirements.txt               # Dependencies
+    └── tech_detector.py               # Main tool
+```
 
-**Location:** `website_analyzer/`
+## ✨ Features
 
-**Features:**
-- 🔍 Technology detection using Wappalyzer
-- 📊 Comprehensive reporting
-- 💾 JSON export
-- ⚡ Fast and easy to use
-
-### 2. AI XSS Scanner
-AI-powered Cross-Site Scripting vulnerability scanner.
-
-**Location:** Root directory
-
-**Features:**
-- 🤖 AI-driven vulnerability detection
-- 🌐 Chrome browser automation
-- 💉 Automatic payload generation
-- 📸 Screenshot capture
+- 🎯 Accurate technology detection
+- 📊 Comprehensive technology listing
+- 💾 JSON export for further analysis
+- ⚡ Fast and simple to use
+- 🌐 Works with any website
 
 ## 🚀 Quick Start
 
@@ -33,39 +28,72 @@ AI-powered Cross-Site Scripting vulnerability scanner.
 ```bash
 # Clone the repository
 git clone https://github.com/blackangiliq/hack_tools.git
-cd hack_tools
+cd hack_tools/website_analyzer
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Install Playwright browsers (for XSS scanner)
-playwright install
 ```
 
 ### Usage
 
-**Website Analyzer:**
 ```bash
-cd website_analyzer
 python tech_detector.py
 ```
 
-**XSS Scanner:**
-```bash
-python smart_xss_scanner.py
+Then enter the target URL when prompted.
+
+### Example
+
 ```
+🔍 Website Technology Detector
+   Powered by Wappalyzer
+
+🎯 Enter website URL: example.com
+
+============================================================
+🔍 WEBSITE TECHNOLOGY DETECTOR
+============================================================
+
+🌐 Analyzing: https://example.com
+⏳ Loading Wappalyzer database...
+📡 Fetching website data...
+🔍 Detecting technologies...
+
+============================================================
+✅ TECHNOLOGIES DETECTED
+============================================================
+
+📊 Found 12 technologies:
+
+   1. Apache
+   2. Bootstrap
+   3. jQuery
+   4. MySQL
+   5. PHP
+   ...
+
+💾 Results saved to: technologies.json
+```
+
+## 📋 What Can Be Detected?
+
+- **Web Servers:** Apache, Nginx, IIS
+- **Frameworks:** React, Vue.js, Django, Laravel
+- **CMS:** WordPress, Drupal, Joomla
+- **Analytics:** Google Analytics
+- **CDN:** Cloudflare, Akamai
+- **JavaScript Libraries:** jQuery, Bootstrap
+- **And much more!**
 
 ## 📋 Requirements
 
 - Python 3.7+
+- python-Wappalyzer
 - Internet connection
-- Google Chrome (for XSS scanner)
-- Google AI API Key (for AI features)
 
 ## ⚠️ Disclaimer
 
-These tools are for educational and authorized security testing purposes only. 
-Always obtain proper authorization before testing any system you don't own.
+This tool is for educational and authorized security testing purposes only.
 
 ## 📝 License
 
@@ -74,10 +102,6 @@ MIT License - Feel free to use and modify.
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to submit pull requests.
-
-## 📧 Contact
-
-For issues and questions, please open an issue on GitHub.
 
 ---
 
